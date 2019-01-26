@@ -1,8 +1,9 @@
 //
+//created by: Gordon Griesel
 //modified by: Emil Miranda
-//date: Jan-01-2019
+//date: Jan-24-2019
 //
-//3350 Spring 2018 Lab-1
+//3350 Spring 2019 Lab-1
 //This program demonstrates the use of OpenGL and XWindows
 //
 //Assignment is to modify this program.
@@ -271,9 +272,9 @@ void movement()
         s = &g.box;
 
         if (p->s.center.y < s->center.y + s->height &&
-                p->s.center.y > s->center.y - s->height &&
-                p->s.center.x > s->center.x - s->width && 
-                p->s.center.x < s->center.x + s->width) {
+            p->s.center.y > s->center.y - s->height &&
+            p->s.center.x > s->center.x - s->width && 
+            p->s.center.x < s->center.x + s->width) {
             //bounce
             p->velocity.y = -p->velocity.y;
         }
